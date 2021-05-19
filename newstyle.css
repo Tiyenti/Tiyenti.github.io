@@ -1,12 +1,22 @@
 body
 {
     font-family: "Droid Sans", Arial, Arial, Helvetica, sans-serif;
-    background-color: #1c1c1c;
-    color: rgb(226, 226, 226);
     padding: 0px;
     margin: 0px;
     font-size: 95%;
     line-height: 24px;
+}
+
+body.dark
+{
+    background-color: #1c1c1c;
+    color: rgb(226, 226, 226);
+}
+
+body.light
+{
+    background-color: rgb(226, 226, 226);
+    color: #1c1c1c;
 }
 
 #header-background
@@ -62,7 +72,7 @@ body
 .date
 {
     font-size: 80%;
-    color: silver;
+    /* color: silver; */
 }
 
 hr
@@ -75,7 +85,6 @@ hr
 a
 {
     text-decoration: none;
-    color: rgb(200, 200, 200);
 }
 
 a.readmore, a.readmore:hover
@@ -87,7 +96,33 @@ a.readmore, a.readmore:hover
 a:hover
 {
     text-decoration: underline;
+}
+
+.dark a
+{
+    color: rgb(230, 190, 210)
+}
+.dark a:hover
+{
     color: #ffffff;
+}
+
+.light a
+{
+    color: rgb(40, 50, 200)
+}
+.light a:hover
+{
+    color: rgb(40, 50, 200);
+}
+
+#header a
+{
+    color: rgb(200,200,200);
+}
+#header a:hover
+{
+    color: #fff;   
 }
 
 a.social
@@ -108,8 +143,23 @@ code
 
 .comment
 {
-    color: #AAA;
     font-size: 85%;
+    font-style: italic;
+}
+
+.dark .comment,
+.dark details.note, .dark details.note summary,
+.dark .img-caption,
+.dark .date
+{
+    color: #AAA;
+}
+.light .comment,
+.light details.note, .light details.note summary,
+.light .img-caption,
+.light .date
+{
+    color: #555;
 }
 
 .blog-image
@@ -126,21 +176,20 @@ code
     margin-top: 0px;
     font-size: 90%;
     font-style: italic;
-    color: #AAA;
+    /*color: #AAA;*/
 }
 
 details.note
 {
     display: inline;
-    color: #aaa;
     cursor: text;
     font-size: 85%;
-    font-style: italic;
-    vertical-align: super;
+    /* vertical-align: super; */
 }
 
 details.note summary
 {
     display: inline;
     cursor: pointer;
+    font-weight: bold;
 }

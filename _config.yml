@@ -1,5 +1,7 @@
 name: Tiyenti
-title: Tiyenti
+title: Tiyenti's Texts
+description: Tiyenti's stuff
+author: Tiyenti
 markdown: kramdown
 timezone: Europe/London
 defaults:
@@ -16,3 +18,5 @@ defaults:
     values:
       layout: "post"
       excerpt_separator: "<!--more-->"
+plugins:
+  - jekyll-feed
