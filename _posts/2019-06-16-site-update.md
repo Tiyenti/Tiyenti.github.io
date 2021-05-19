@@ -1,4 +1,5 @@
 ---
+category: meta
 ---
 Hey. As you can see, I've updated this here GitHub Pages site to be a bit less... placeholder-y.
 There's, like, an actual *design* now, and it's a lot easier to make new pages for it now since
