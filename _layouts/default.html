@@ -7,7 +7,7 @@
     <body>
         <div id="header-background">
             <div id="header">
-                <img id="header-logo" width="200px" src="/tiyenti.png" />
+                <a href=" {% link index.html %} "><img id="header-logo" width="200px" src="/tiyenti.png" /></a>
                 {% for link in site.data.navigation %}
                 <a class="header-link" href="{{ link.url }}">{{ link.title }}</a>
                 {% endfor %}

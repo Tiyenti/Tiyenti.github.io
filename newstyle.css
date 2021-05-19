@@ -6,7 +6,7 @@ body
     padding: 0px;
     margin: 0px;
     font-size: 95%;
-    line-height: 22px;
+    line-height: 24px;
 }
 
 #header-background
@@ -110,4 +110,37 @@ code
 {
     color: #AAA;
     font-size: 85%;
+}
+
+.blog-image
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.img-caption
+{
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 90%;
+    font-style: italic;
+    color: #AAA;
+}
+
+details.note
+{
+    display: inline;
+    color: #aaa;
+    cursor: text;
+    font-size: 85%;
+    font-style: italic;
+    vertical-align: super;
+}
+
+details.note summary
+{
+    display: inline;
+    cursor: pointer;
 }

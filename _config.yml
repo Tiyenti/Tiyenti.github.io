@@ -15,4 +15,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      excerpt_separator: <!--more-->
+      excerpt_separator: "<!--more-->"
