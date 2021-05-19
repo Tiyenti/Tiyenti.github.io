@@ -1,0 +1,39 @@
+body
+{
+    font-family: "Droid Sans", Arial, Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+}
+
+.footer, .header
+{
+    color: #aaaaaa;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 85%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a.social
+{
+    color: #555555;
+}
+
+a.social:hover
+{
+    color: #000000;
+}
+
+code
+{
+    background-color: #F0F0F0;
+    padding: 2px;
+}
+
+.comment
+{
+    color: #AAA;
+    font-size: 85%;
+}

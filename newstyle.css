@@ -1,0 +1,113 @@
+body
+{
+    font-family: "Droid Sans", Arial, Arial, Helvetica, sans-serif;
+    background-color: #1c1c1c;
+    color: rgb(226, 226, 226);
+    padding: 0px;
+    margin: 0px;
+    font-size: 95%;
+    line-height: 22px;
+}
+
+#header-background
+{
+    background-color: #080808;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+#header
+{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    width: 100%;
+}
+
+#header-logo
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-link, .header-link:hover
+{
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    width: 58px;
+    max-width: 120px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+}
+
+#content-container
+{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.blog-index-title, .blog-index-title:hover
+{
+    text-decoration: none;
+}
+
+.date
+{
+    font-size: 80%;
+    color: silver;
+}
+
+hr
+{
+    border-style: solid;
+    border-color: #555;
+    border-width: 1px;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+
+a.readmore, a.readmore:hover
+{
+    text-decoration: none;
+    font-size: 90%;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+a.social
+{
+    color: #555555;
+}
+
+a.social:hover
+{
+    color: #000000;
+}
+
+code
+{
+    background-color: #F0F0F0;
+    padding: 2px;
+}
+
+.comment
+{
+    color: #AAA;
+    font-size: 85%;
+}

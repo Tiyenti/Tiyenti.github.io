@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <link href="/newstyle.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header-background">
+            <div id="header">
+                <img id="header-logo" width="200px" src="/tiyenti.png" />
+                {% for link in site.data.navigation %}
+                <a class="header-link" href="{{ link.url }}">{{ link.title }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+            {{ content }}
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
