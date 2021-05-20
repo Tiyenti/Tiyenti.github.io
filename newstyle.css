@@ -93,27 +93,32 @@ a.readmore, a.readmore:hover
     font-size: 90%;
 }
 
-a:hover
+a:hover, span.fakelink:hover
 {
     text-decoration: underline;
 }
 
-.dark a
+.dark a, .dark span.fakelink
 {
     color: rgb(230, 190, 210)
 }
-.dark a:hover
+.dark a:hover, .dark span.fakelink
 {
     color: #ffffff;
 }
 
-.light a
+.light a, .light span.fakelink
 {
     color: rgb(40, 50, 200)
 }
-.light a:hover
+.light a:hover, .light span.fakelink
 {
     color: rgb(40, 50, 200);
+}
+
+span.fakelink:hover
+{
+    cursor: pointer;
 }
 
 #header a
