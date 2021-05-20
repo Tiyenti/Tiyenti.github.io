@@ -11,27 +11,8 @@ As you might be able to tell now, if you've somehow found your way here, is that
 
 <div>
 Another thing you will notice is that I have copied the two posts on <a href="https://tiyenti.wordpress.com">tiyenti.wordpress.com</a>, another blog site I have, and therefore they are now mirrored here. This is due to how I've not entirely been sure where I want to do my writing, whenever I do get the urge to do any of it. WordPress is nice for it as a dedicated platform, yet there is also benefits to using GitHub Pages, such as me being able to use a more unique and personal web design, as I have full control over the layout - this also makes it easier to add certain useful features such as clickable footnotes, like this: 
-<details class="note">
-<summary title="click to reveal">[note]</summary> You did it, you clicked the footnote, well done!</details> That being said, there's a certain thing that seems appealing to my brain about using a more dedicated platform, but even with that in mind, I wonder if WordPress is my favoured solution, as there are certainly other platforms available, like Medium, as well as newsletter services, such as that one that Twitter acquired not too long ago, that may be ultimately be a better fit than a repo on a source control website. But I do appreciate the level of minimialism that this affords me; there's not much distraction regarding the text content itself, and the basic HTML and lack of JavaScript means that it probably loads pretty fast. There's nothing quite like a good ol' <a href="https://motherfuckingwebsite.com/">motherfucking website</a>, after all.
+<details style="display: inline;" class="note">
+<summary style="display: inline;" title="click to reveal">[note]</summary> You did it, you clicked the footnote, well done!</details> That being said, there's a certain thing that seems appealing to my brain about using a more dedicated platform, but even with that in mind, I wonder if WordPress is my favoured solution, as there are certainly other platforms available, like Medium, as well as newsletter services, such as that one that Twitter acquired not too long ago, that may be ultimately be a better fit than a repo on a source control website. But I do appreciate the level of minimialism that this affords me; there's not much distraction regarding the text content itself, and the basic HTML and lack of JavaScript means that it probably loads pretty fast. There's nothing quite like a good ol' <a href="https://motherfuckingwebsite.com/">motherfucking website</a>, after all.
 </div>
 
 So, ultimately, I'm not sure what the best platform for me to engage in writing stuff is. I guess I don't really need to care considering that I haven't been doing a whole lot of it to begin with (outside of my journal, which is ***extremely*** personal and I won't *ever* publish that lol); so I suppose this is just another materialization of my random obsessions with platforms I don't need to use. But yeah. I might see if I can justify using this blog (or whatever site I decide to use - I might shop around a bit and switch hosts at seemingly random intervals depending on my mood) a little bit more; I still have some random opinion piece on yet another topic I don't really *need* to care about that I wrote a few days ago, that I could perhaps publish. I still need to add sources to it, but most of the text is done. For the time being though, I suppose I'm out of here for now. See you.
-
-<style>
-details.note
-{
-display: inline;
-cursor: text;
-font-size: 85%;
-/* vertical-align: super; */
-}
-
-details.note summary
-{
-display: inline;
-cursor: pointer;
-font-weight: bold;
-min-width: fit-content;
-user-select: none;
-}
-</style>
