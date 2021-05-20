@@ -38,8 +38,7 @@ Ordering the replacement bumpers took a few days to arrive, but once I did end u
 
 The first step was to unscrew the five screws on the back of the controller. One of these was fairly easily accessible, just being underneath the sticker under the battery compartment, but the next four that I needed to unscrew were much more difficult to get off, as in order to get to them you need to pry off the back rubber grips. This was a trial. It took me quite a while but eventually I did manage to get off the grips to access the screws below them:
 
-<img class="blog-image" src="https://pbs.twimg.com/media/Es1JQbKUwAoqjoC.jpg" alt="Photograph of an Xbox One Elite controller face down on a desk with the back grips removed. The grips and a blue plastic pry tool are visible on the right side of the photo."/>
-<p class="img-caption">The operation begins...</p>
+{% include img.html src="https://pbs.twimg.com/media/Es1JQbKUwAoqjoC.jpg" alt="Photograph of an Xbox One Elite controller face down on a desk with the back grips removed. The grips and a blue plastic pry tool are visible on the right side of the photo." caption="The operation begins..."%}
 
 From there, I began to work at unscrewing those screws, to release the face plate of the controller so I could lift up the old bumper assembly and then slot in my replacement.
 
@@ -47,12 +46,11 @@ Also, I lost a screw in the process of doing this. Yeah. I dropped it after unsc
 
 Anyway, once I removed and carefully stored the other four screws I didn't immediately drop after releasing them from their holes, I could remove the faceplate of the controller and begin the process of bumper repair.
 
-<img class="blog-image" src="https://i.imgur.com/Nn8iPSb.jpg" alt="Slightly out of focus photo of the aformentioned controller with its faceplate removed. Among the assorted items also visible are the back grips, a screwdriver, two blue pry tools, and one of the bumper assemblies that will be used to repair the controller."/> 
-<p class="img-caption">Yes this is slightly out of focus. The replacement bumper is up in the top left corner, if you're curious what that is.</p>
+{% include img.html src="https://i.imgur.com/Nn8iPSb.jpg" alt="Slightly out of focus photo of the aformentioned controller with its faceplate removed. Among the assorted items also visible are the back grips, a screwdriver, two blue pry tools, and one of the bumper assemblies that will be used to repair the controller." caption="Yes this is slightly out of focus. The replacement bumper is up in the top left corner, if you're curious what that is." %}
 
 From here, things got kinda tricky. From the guides I had watched, I knew that I should lift the old bumper assembly out of the controller from the bottom, but I wasn't really able to get it up initally. I ended up having to use one of the plastic pry tools that came with the replacement kit to release it off of the controller body, but nevertheless, I was able to get it off. For fun, we can also take a look and see what happened to the right bumper - a tiny little snap:
 
-<img class="blog-image" src="https://i.imgur.com/QuVtNzb.jpg" alt="View of the underside of the broken bumper assembly. There is a small crack visible in the plastic that allows the right bumper to click down."/>
+{% include img.html src="https://i.imgur.com/QuVtNzb.jpg" alt="View of the underside of the broken bumper assembly. There is a small crack visible in the plastic that allows the right bumper to click down." %}
 
 But getting back to the point; after this, I could then begin the process of actually fitting the replacement parts. From what I had seen from the guides I had consulted, it seemed simple. Just take the replacement bumper assembly, slot in the back pegs into the slots in the back of the controller, and then push everything down until it clicks. Seems simple enough, right...?
 
@@ -68,8 +66,7 @@ Also irritating is that sometimes when I was pulling the back of the controller 
 
 In any case, continuing to the bumper replacement once more, eventually I did manage to get the bumpers to properly seat into their slots, and hey! They worked! But there was still a big problem, and that was that the center piece wasn't locking in. I couldn't get the thing over the Xbox button in the center in order for it to successfuly click down. I have no idea what I was doing wrong, but for whatever reason I just could not get the thing in.
 
-<img class="blog-image" src="https://i.imgur.com/pbiH78u.jpg" alt="The faceplate-less Xbox Elite controller face up on the desk once again. This time, the replacement bumper assembly is on the controller, but the center portion between the two bumpers is slightly raised, rather than sitting flush with the central Xbox logo button." />
-<p class="img-caption">This was the closest I could get for hours... note how the center frame is slightly raised off of the center button here.</p>
+{% include img.html src="https://i.imgur.com/pbiH78u.jpg" alt="The faceplate-less Xbox Elite controller face up on the desk once again. This time, the replacement bumper assembly is on the controller, but the center portion between the two bumpers is slightly raised, rather than sitting flush with the central Xbox logo button." caption="This was the closest I could get for hours... note how the center frame is slightly raised off of the center button here." %}
 
 Now, one thing that I did wonder was whether or not the replacement parts I was using had some kind of manufacturing tolerance that was preventing them from slotting in properly, so I wanted to see if I could use the original center piece rather than the replacement one, but I didn't end up trying that immediately since I was having some difficulty getting the actual bumper bracket out of the center piece, so I did end up just repeatedly trying to push down the assembly again to see if I could somehow get it to work, but for the time being, I had no dice.
 
@@ -93,15 +90,13 @@ Oh nooooo one of the screws fell into the controller??
 
 Yeah so apparently there's actually a hole right next to two of the screws that they can actually fall into if you're not careful, so... yeah, I ended up having to open up the controller again in order to fish it out... I didn't want another lost screw, especially not one that was actually inside of the controller. But thankfully, I did in fact manage to get the screw out, and *bam*
 
-<img class="blog-image" src="https://pbs.twimg.com/media/Es2F010WMAIzrQN.jpg" alt="An image of the now fully repaired controller held up by one hand. A monitor, gaming headset, and desktop computer tower are visible in the background."/>
-<p class="img-caption">We back boys</p>
+{% include img.html src="https://pbs.twimg.com/media/Es2F010WMAIzrQN.jpg" alt="An image of the now fully repaired controller held up by one hand. A monitor, gaming headset, and desktop computer tower are visible in the background." caption="We back boys" %}
 
 I checked every button with an input display just to make sure everything worked fine and nothing broke, but yeah! My controller is now back to normal! After way longer than I was honestly expecting... but it's back.
 
 It's alright, though. I had nothing much better to do with my time, honestly. It was pretty frustating, though. But now that we're done, we can even get a closer view of that broken bumper assembly, in all of its terribly-designed glory:
 
-<img class="blog-image" src="https://i.imgur.com/ZSYaMEy.jpg" alt="A clearer image of the old broken bumper assembly, now removed from the controller. The assembly appears as a single piece of plastic with the bumpers on either side of a central bendy bit, with two peg holes that make it look vaguely like a face. The crack on the right side is more pronounced than in the last image." />
-<p class="img-caption">Yes. This is the actual design. Being able to make fun of this ~personally~ obviously makes up for the frustration.</p>
+{% include img.html src="https://i.imgur.com/ZSYaMEy.jpg" alt="A clearer image of the old broken bumper assembly, now removed from the controller. The assembly appears as a single piece of plastic with the bumpers on either side of a central bendy bit, with two peg holes that make it look vaguely like a face. The crack on the right side is more pronounced than in the last image." caption="Yes. This is the actual design. Being able to make fun of this ~personally~ obviously makes up for the frustration." %}
 
 It's now been about a week since I had attempted and eventually succeeded at this repair, and I can confirm that it works pretty much perfectly. The main thing that's different is that now the controller does admittedly feel a little flimsier - which I assume is a side effect of the fact that, you know, it's supposed to be sealed shut, and the adhesive tape that's normally there to keep the back rubber grips on the controller has obviously been torn off now. And also because I lost a screw. That's. y'know. That's probably not helping either.
 
