@@ -1,4 +1,4 @@
-<details style="display: inline;" class="note">
-<summary style="display: inline;" title="click to reveal">[{{ include.title | default: "note"}}]</summary>
-{{ include.footnote }}
-</details>
+<a tabindex="0" class="note">
+    <span title="{{ include.footnote }}">[{{ include.title | default: "note"}}]</span>
+    <span class="note-content" hidden>{{ include.footnote }}</span>
+</a>

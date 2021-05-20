@@ -149,15 +149,19 @@ code
 
 .dark .comment,
 .dark details.note, .dark details.note summary,
+.dark span.note, .dark .span.note-content,
 .dark .img-caption,
 .dark .date
+.light a.note
 {
     color: #AAA;
 }
 .light .comment,
 .light details.note, .light details.note summary,
+.light span.note, .light .span.note-content,
 .light .img-caption,
-.light .date
+.light .date,
+.light a.note
 {
     color: #555;
 }
@@ -195,4 +199,30 @@ details.note summary
     min-width: auto;
     width: fit-content;
     user-select: none;
+}
+
+a.note
+{
+    display: inline;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    text-decoration: none;
+    font-size: 85%;
+}
+
+span.note-content
+{
+    display: none;
+    cursor: text;
+    font-weight: normal;
+    user-select: none;
+}
+
+a.note:focus span.note-content
+{
+    display: inline;
+    cursor: text;
+    font-weight: normal;
+    user-select: text;
 }
