@@ -192,4 +192,6 @@ details.note summary
     display: inline;
     cursor: pointer;
     font-weight: bold;
+    min-width: fit-content;
+    user-select: none;
 }

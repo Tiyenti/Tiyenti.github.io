@@ -16,3 +16,22 @@ Another thing you will notice is that I have copied the two posts on <a href="ht
 </div>
 
 So, ultimately, I'm not sure what the best platform for me to engage in writing stuff is. I guess I don't really need to care considering that I haven't been doing a whole lot of it to begin with (outside of my journal, which is ***extremely*** personal and I won't *ever* publish that lol); so I suppose this is just another materialization of my random obsessions with platforms I don't need to use. But yeah. I might see if I can justify using this blog (or whatever site I decide to use - I might shop around a bit and switch hosts at seemingly random intervals depending on my mood) a little bit more; I still have some random opinion piece on yet another topic I don't really *need* to care about that I wrote a few days ago, that I could perhaps publish. I still need to add sources to it, but most of the text is done. For the time being though, I suppose I'm out of here for now. See you.
+
+<style>
+details.note
+{
+display: inline;
+cursor: text;
+font-size: 85%;
+/* vertical-align: super; */
+}
+
+details.note summary
+{
+display: inline;
+cursor: pointer;
+font-weight: bold;
+min-width: fit-content;
+user-select: none;
+}
+</style>
