@@ -245,3 +245,21 @@ div.footnotes li:target
 {
     background-color:rgba(210, 120, 0, 0.2);
 }
+
+/* bottom nav */
+  
+.bottomnav
+{
+    width: auto;
+}
+
+.bottomnav a {
+display: block;
+width: 50%;
+float: left;
+}
+
+.bottomnav .next {
+text-align: right;
+float: right;
+}
