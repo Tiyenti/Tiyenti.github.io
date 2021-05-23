@@ -7,6 +7,12 @@ title: Tiyenti's Texts - Blog
     <h2><a class="blog-index-title" href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="date">
         Posted: {{ post.date | date_to_string }}
+        {% if post.updated %}
+            | Updated: {{ post.updated | date_to_string }}
+        {% endif %}
+        {% if post.category %}
+            | Category: {{ post.category }}
+        {% endif %}
     </div>
     <p>{{ post.excerpt }}</p>
     <a class="readmore" href="{{ post.url}}">⯈ View post</a>

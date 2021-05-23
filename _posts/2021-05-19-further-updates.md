@@ -1,6 +1,6 @@
 ---
 title: Further Site Changes, WordPress Imports, Thoughts on Blogging Location
-category: "Meta"
+category: "meta"
 ---
 
 Hey, it's been a while since I last updated anything here.
