@@ -246,6 +246,21 @@ div.footnotes li:target
     background-color:rgba(210, 120, 0, 0.2);
 }
 
+/* spoilers */
+
+span.spoiler
+{
+    color: black;
+    background-color: black;
+}
+
+span.spoiler:hover
+{
+    color: white !important;
+    background-color: black;
+}
+
+
 /* bottom nav */
   
 .bottomnav
