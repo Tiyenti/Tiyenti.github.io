@@ -10,9 +10,8 @@ as hell and there was nothing else readily available.
 
 Ping @Tiyenti#3201 on Discord if you have any suggestions.
 
-<span class="comment">Last updated 2021-12-03</span>
+<span class="comment">Last updated 2021-12-11</span>
 
-<!-- A -->
 ## Air Control Map
 A level that is typically designed to require large amounts of [gripflight](#gripfly) and/or wing control in order to complete. See also [hard map](#hard-map) - a related concept that overlaps with this one, although not all air control maps may necessarily be described as hard maps.
 
@@ -21,6 +20,9 @@ A control option that refers to rolling while airborne, with either the thruster
 
 The term "air roll" is also used loosely to refer to the entire collection of airborne rotation controls, and thus will often include not just air roll, but also air pitch. The air roll control options are used in [single stick](#single-stick) control schemes, allowing the same stick to be used for steering on the ground, but switching to rotation while in the air. Contrast [jet roll](#jet-roll), which is used any time, including on the ground, as long as wings are not open, and [wing roll](#wing-roll), which is only used when wings *are* open.
 <!-- B -->
+## Barrel Troll
+A phenonemon where the game seemingly fails to register barrel roll tricks, despite a full roll being completed visually speaking. Barrel trolls usually happen due to quirks with how the trick system sets the origin point of the roll. It's possible to learn how work around this to avoid getting barrel trolled, but it can be extremely annoying when one happens unexpectedly. <!-- Added 2021-12-11. -->
+
 ## Birotational Transfer
 A [transfer](#transfer) that requires rotating on both the pitch and roll axes to complete. Also referred to as a *double-axis transfer*.
 
@@ -98,6 +100,9 @@ In the speedrunning community, the term "reset" is also commonly used in the tra
 <!-- S -->
 ## Sawboosting
 Intentionally hitting a saw with the intention of using its rotation to boost the car's speed. The reward for successfully sawboosting can be massive depending on the map, although whether it works or not is pretty much entirely down to luck. See also [roller boosting](#roller-boosting) and [mine boosting](#mine-boosting) for other "damage boosting" techniques.
+
+## Shiver Space
+A name given to the regions of game space that are extremely far away from the level's center point (coordinates 0,0,0). At these extreme distances, the game begins to suffer from floating point precision errors, causing a variety of unusual effects that include the car appearing to shake (or shiver, hence the name). <!-- Added 2021-12-11. -->
 
 ## Single Stick
 Refers to a control scheme, typically on a gamepad, that uses only one control stick for both rotation and thruster inputs. The default gamepad control scheme is an example of a single stick layout. Many single stick control scheme players will, however, map [wing roll](#wing-roll) to a seperate control stick, as the default single stick scheme does not allow you to roll and steer with wings at the same time. Contrast [dual stick](#dual-stick).
