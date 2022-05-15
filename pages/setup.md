@@ -1,0 +1,71 @@
+---
+---
+# Tiyenti's Computer Setup
+A personal favourite topic of mine are what gear content creators use to make their stuff and
+why. I want to make a full setup video at some point, but I'm planning some relatively major
+changes to my setup soon, and I want to make sure that those changes are "worn in", so to speak,
+before I make a video about it. Also, I've been taking a break from content creation for a while
+anyway so I don't think it makes a whole lot of sense to do it right now anyway. In the interim,
+though, if you were curious about what I use, here's what I got, as well as some commentary
+as to why I chose that piece of equipment, or simply discussing something interesting related
+to it. I might make a TL;DR version as well at some point that just has the stuff but I wanted
+to write, so I wrote lol
+
+> The last time I updated the text on this page at all was on **2022-05-15**.  
+> The last time my equipment has changed and I've updated this page to reflect this was on **2022-05-15**. 
+
+## The Essential Peripherals
+* **Logitech G502 Proteus Core mouse:**
+This is the mouse I've been using for nearly 10 years, iirc? It's probably not as useful for me
+at this point since I no longer actively play any games that require it, but I like it. The
+only issue is that the scroll wheel is a bit loose now, the unlocked scroll is practically the
+same as the infinite scroll at this point, so I'm actually getting a newer mouse soon.
+* **Razer Sphex mouse mat:**
+I've been using this mouse mat for nearly as long as the mouse, but not sure of the exact time frame. I don't really have a reason to get a new one, so yeah. I actually got this one because I went to a physical store to get a mouse pad and the one I wanted wasn't there and I got this one instead. I think it was a good choice though. Unlike most mouse pads it has barely any raised edge off of the desk at all, it's pretty much just an adhesive sticker you slap on your desk. To be specific about what I have, I've got the original, first generation Razer Sphex, but I imagine the V2 and V3 are similar.
+* **Corsair K65 RGB keyboard:**
+The keyboard I've been using since my first desktop PC, so it's about 7 years old now. I knew I wanted a mechanical keyboard, but I also knew that I wouldn't have a whole lot of space
+available, so I sprung for a TKL keyboard. It's been holding up pretty well, although there's a bit of cosmetic damage (some of the RGB LEDs are a little dead and the legend on the keycaps
+is a bit scratched). It's got Cherry MX Red switches. That was the only option available on
+this keyboard at the time, and without having other switches to test I can't explictly say
+this is my preference, although from what I hear it is supposed to be more ideal switches for gaming. I am admittedly interested in MX Blues just for the loudness factor lol, I kinda like having a loud keyboard personally.
+* **Logitech G633 Artermis Spectrum headset:**
+This serves as both the headphones and microphone I've been using for around 7 years. The RGB
+lighting is pretty neat and the inbuilt mixer, allowing you to use both a USB and 3.5mm input
+at the same time, is very useful for me, although one thing I *don't* like is that the headset
+is pretty heavy. It also gets kind of uncomfortable on my ears if I wear it for a while. The material on the ear pads is starting to flake though so I intend to upgrade this alongside a
+full upgrade to my audio setup soonish.
+* **BenQ Zowie XL2430 primary monitor:** A 24", 144hz, 1080p monitor. I don't have much to say about this to be honest, I just wanted a 144hz monitor so this is the one I got. I do have to say though I did wish I could get something smaller, although I couldn't find a 21.5" monitor
+or something that was also 144hz, so this was the smallest I was able to find at the time.
+* **Ace K222HQL secondary monitor** Also 1080p but 21.5" and 60hz. This was my original monitor prior to getting my primary monitor. It's basic but it doesn't really need to be any more than that for my secondary monitor (read: Discord viewer).
+* **Xbox One Elite Series 1 Controller:** I use this controller to play Distance with. The Elite controller is alright, but god, the bumper design on it is *garbage*, at least on the Series 1; both the left and right bumpers are essentially a single piece of plastic that just bends to hit a switch on either side when you click it. This means the bumpers can break *super* easily, as they have done to me twice now. The first time I just got another controller, the second time I got an aftermarket bumper replacement and replaced them myself. This is a really major issue for a £120 controller, but reportedly the Series 2 version is apparently not as bad. I can't vouch for that, though. I also kind of feel like the Xbox One controller design in general is just too big for my hands, but I kind of feel stuck using this one for Distance since my control scheme relies on the extra paddle buttons on the controller grips; these things are amazing and the only reason I own this controller. I've been saying since the Steam Controller came out that these things ought to be a standard feature, and I'm still mad that this still isn't the case :\| I would rather avoid third party offerings if I can, but I might have to look into them given that not many official controllers offer this feature.
+
+## Additional Things
+* **Nintendo Switch Pro Controller:** I use this controller for playing Switch games, I got this day 1 of getting my Switch as I knew the Joy-Cons would not be for me. IMO the Switch controller is honestly probably one of the best official controllers out of the three, although I admittedly have never touched a DualShock 4 or DualSense so my opinion's only two-thirds formed. Some will criticize the lack of analog triggers but I actually much prefer digital triggers and think they are better for almost every situation (and before you ask, yes, the Elite controller has trigger stops, but they are not anywhere near as good as a proper digital button). The Switch Pro also feels a lot better in my hands than the Xbox controller does. If it had the extra back buttons I'd probably use it for Distance tbh, although I have had control stick responsiveness issues due to the stick grinding against the gate, causing dust buildup. (though I've had not any outright *drift*, yet, thankfully).
+* **Elgato HD60 S+ capture card:** This is what I use to capture Switch footage, on the relatively rare occasion I do that. I bought it to replace a previous capture card since that thing was super, super old (it only did 30fps and had ~1.5 seconds of capture lag), and also because it had bright and annoying flashing status LEDs so I couldn't just leave it set up, so it was inconvenient to use as well. It also seemed to be broken and was very picky about working properly, despite me never really using it that often. {% include footnote.html footnote="Though now I'm wondering if it was just the PCI-E USB expansion card I plugged it into, because I *also* had issues with my Elgato plugged into the same port. Wonder if it would still work alright if I used a port on my motherboard, it might be the expansion that was busted." %} That last reason is the more pressing reason why I got it, since I was doing some Bowser's Fury speedruns at the time and needed a better capture card for that, but since then I sorta dropped that game and then went on hiatus entirely, so it's not been used as much as I was intending. It's still there and plugged in though so I can easily go boot a game up and stream/record it if I so desire.
+* **Fightboard MX Mirrored keypad:** What I use to play Tetris games on consoles, like Tetris 99. This is a little 3D printed mechanical keypad that I found someone selling on Etsy. I decided to buy one as I'm used to playing Tetris on a keyboard, and despite attempting to play with a controller a number of times I could not get the hang of it, so I was pretty stoked when I found this thing (unfortunately a bit late into the T99 life cycle, but oh well). It's definitely more cramped than a normal keyboard, which makes it a bit awkward at times, but it's far more familiar to me than
+a gamepad so I do like it. {% include footnote.html footnote="I attribute some of my T99 play being worse than other Tetris games to me not being used to the keypad, but also due to that game's system mechanics (it doesn't have IRS/IHS like Tetris Effect or various fangames/clones which is infuriating.)" %} I specifically got the mirrored version with Cherry MX Red switches to match my ZXC + Arrows controls on my fullsize board. There's also a non-mirrored standard version which is arranged like a typical arcade fight stick, which has both MX and low-profile
+switch versions, if you're more into that. Most of my Tetris play is still on PC for now so this is also another one of those things that's neat but doesn't see much use, but it's nice to have in case another console-exclusive Tetris game that I want to play comes along.
+* **Mayflash Magic-NS Wireless Contoller Adapter Rev1.2:** The Fightboard doesn't work with the Switch natively so I use this adapter, per the Fightboard seller's reccomendation. Not much to say about it, it does the job fine. The only thing I will say is that I do feel like, with the Fightboard + Adapter into Switch combo it does sometimes feel like there might be some input lag, but I'm not sure if that's the fault of the keypad, adapter, or the Switch itself (I know that the Switch does have like 6 frames of inherent input lag in a lot of its games. Not sure if Tetris 99 is one of them, though.)
+* **Logitech LS11 speakers:** Stereo speakers, these things are ancient and are basically an old-hand-me-down. They have also been dust collectors for years as I've just been using my headphones for all audio requirements for years now, and I didn't like the green power LED on them that I could only turn off by setting the volume to 0 (which would lose my volume setting) or by unplugging them. I maybe ought to get rid of them at some point since I don't plan on using them for anything, but for now, they're here.
+* **Logitech C920 webcam:** I've had this webcam since my first desktop so it's about 7 years old. I have used it a grand total of 3 times. I also heavily regret the times I have used it. So... hasn't really turned out to be the most useful product here, but it's there if I need it, I guess. I admittely use it as a mirror on occasion if I feel lazy, but for actual content creation I probably won't really use it.
+
+## The Actual Computer
+I'm sure some people would be interested in the actual computer I have, although, I will have
+to kill some potential hype in that I didn't actually build this PC myself, I got it from a
+system builder. It's not a prebuilt per se, but yeah, I didn't put the things together. As
+a result I sorta don't have much actual attachment to it and there's not really a whole lot
+of interesting things to say about it, so I'll just give off the important things or anything
+interesting I can think to say about it. I still wanna build my own PC eventually, but this
+will do for now. {% include footnote.html footnote="Although, getting it from a system builder *is* probably what allowed me to get a 5600x and 3070, which was current gen at the time and apparently very difficult to get a hold of. I'm sorry, custom builders lol" %}
+
+* Some **ASUS motherboard**, not sure which one exactly.
+* **Ryzen 5600x processor**
+* **ZOTAC RTX 3070**
+* 16GB of **Corsair** RAM, not sure which model off hand.
+* **Samsung 970 EVO Plus 500GB SSD**
+* **Seagate Barracuda 2TB HDD:** This I actually do have a comment on, in that this drive is an SMR hard drive which means it's bad for recording to, I kept getting "encoder overloaded" errors in OBS and occasional frame stutters/drops in my recordings for a while and could not figure out the issue until I tried recording to my SSD and realised that the footage came out much better there. I'm thinking about getting either a CMR hard drive or dedicated recording SSD at some point so I'm not recording directly to my boot drive. I didn't think that a modern hard drive would actually have any problem with recording video to, especially since the 1TB Toshiba drive in my old PC worked just fine as far as I knew, but I also wasn't aware of the difference between SMR and CMR drives at the time, so, oopsie. Apparently, I'm not the first person to be caught out by this though, so that's some relief, I suppose.
+* **Corsair 750w PSU**
+* **Corsair** case, forgot the exact one.
+* I've also got **Corsair RGB fans** in the front. Just a basic exhaust fan on the back though, which is fine since I don't see that end anyway. Unfortunately even only owning this PC for a year, one of the green LEDs on the front fans is already dying; it seems to be due to dust interference if I had to guess, since it was always alternating between working and not working and after I cleaned the front filter, it seemed to help a bit. RGB LEDs are supposedly notorious for dying like this though so I imagine developing a fault like this isn't too surprising, and it's not a huge problem, but eh. It's a bit annoying.
+* CPU cooler is a cooler provided by the system builder I got the PC from.
+* I have a **PCI-E USB expansion card** that I put in when buying that I actually only realised upon getting the PC that I didn't actually need - I thought it was required for the front USB ports, based on an incorrect assumption I made looking at what I thought were my old PC's specs that listed I had one already, but I actually didn't, those specs were outdated/inaccurate. It might come in handy at some point, but as the note above about my capture card states, I have had issues with the ports on it not playing nice with some devices, so I'm wondering if it's actually a little broken? It's not a huge deal though since, again, I didn't actually require it to begin with, so I might just take it out at some point.
