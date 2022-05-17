@@ -11,17 +11,17 @@ as to why I chose that piece of equipment, or simply discussing something intere
 to it. I might make a TL;DR version as well at some point that just has the stuff but I wanted
 to write, so I wrote lol
 
-> The last time I updated the text on this page at all was on **2022-05-15**.  
-> The last time my equipment has changed and I've updated this page to reflect this was on **2022-05-15**. 
+> The last time I updated the text on this page at all was on **2022-05-17**.  
+> The last time my equipment has changed and I've updated this page to reflect this was on **2022-05-17**. 
 
 ## The Essential Peripherals
-* **Logitech G502 Proteus Core mouse:**
-This is the mouse I've been using for nearly 10 years, iirc? It's probably not as useful for me
-at this point since I no longer actively play any games that require it, but I like it. The
-only issue is that the scroll wheel is a bit loose now, the unlocked scroll is practically the
-same as the infinite scroll at this point, so I'm actually getting a newer mouse soon.
+* **Logitech G502 HERO mouse:**
+I had previously been using the OG G502 Proteus Core for nearly 10 years, recently I decided
+that it was time for an uprgade, since the scroll wheel had gotten really loose and I was planning on upgrading other things anyway - although, I ended up getting this mouse *before* some of the other upgrades since it was over half off for a week, and I decided to strike while the iron was hot. I've admittedly heard some bad things about the newer G502 revisions
+{% include footnote.html footnote="They're apparently using cheaper/lower quality microswitches now that are more prone to double clicks." %} which initially made me hesitant to get one but
+since I like the original mouse so much and didn't really want to change, *and* seeing it was pretty heavily discounted at the time, I decided to go for it. We'll see how it holds up, I guess. I do somewhat dislike the fact they're using a thinner, rubber cord on the new model compared to the braided one of the Core, but it's a relatively minor complaint. I've also seen a lot of complaints about G HUB, but the portable Onboard Memory Manager application works fine enough for basic configuration, so, eh, Non-issue for me; I just won't use the software.
 * **Razer Sphex mouse mat:**
-I've been using this mouse mat for nearly as long as the mouse, but not sure of the exact time frame. I don't really have a reason to get a new one, so yeah. I actually got this one because I went to a physical store to get a mouse pad and the one I wanted wasn't there and I got this one instead. I think it was a good choice though. Unlike most mouse pads it has barely any raised edge off of the desk at all, it's pretty much just an adhesive sticker you slap on your desk. To be specific about what I have, I've got the original, first generation Razer Sphex, but I imagine the V2 and V3 are similar.
+I've been using this mouse mat for at least 7 years, but not sure of the exact time frame; dunno if I got this one before or after my original G502. I don't really have a reason to get a new one, so yeah. I actually got this one because I went to a physical store to get a mouse pad and the one I wanted wasn't there and I got this one instead. I think it was a good choice though. Unlike most mouse pads it has barely any raised edge off of the desk at all, it's pretty much just an adhesive sticker you slap on your desk. To be specific about what I have, I've got the original, first generation Razer Sphex, but I imagine the V2 and V3 are similar.
 * **Corsair K65 RGB keyboard:**
 The keyboard I've been using since my first desktop PC, so it's about 7 years old now. I knew I wanted a mechanical keyboard, but I also knew that I wouldn't have a whole lot of space
 available, so I sprung for a TKL keyboard. It's been holding up pretty well, although there's a bit of cosmetic damage (some of the RGB LEDs are a little dead and the legend on the keycaps
