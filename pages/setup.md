@@ -16,7 +16,7 @@ to write, so I wrote lol
 
 ## The Essential Peripherals
 * **Logitech G502 HERO mouse:**
-I had previously been using the OG G502 Proteus Core for nearly 10 years, recently I decided
+I had previously been using the OG G502 Proteus Core for about 7 years, recently I decided
 that it was time for an uprgade, since the scroll wheel had gotten really loose and I was planning on upgrading other things anyway - although, I ended up getting this mouse *before* some of the other upgrades since it was over half off for a week, and I decided to strike while the iron was hot. I've admittedly heard some bad things about the newer G502 revisions
 {% include footnote.html footnote="They're apparently using cheaper/lower quality microswitches now that are more prone to double clicks." %} which initially made me hesitant to get one but
 since I like the original mouse so much and didn't really want to change, *and* seeing it was pretty heavily discounted at the time, I decided to go for it. We'll see how it holds up, I guess. I do somewhat dislike the fact they're using a thinner, rubber cord on the new model compared to the braided one of the Core, but it's a relatively minor complaint. I've also seen a lot of complaints about G HUB, but the portable Onboard Memory Manager application works fine enough for basic configuration, so, eh, Non-issue for me; I just won't use the software. I decided to go with the HERO instead of the LIGHTSPEED as it was cheaper and I didn't need
