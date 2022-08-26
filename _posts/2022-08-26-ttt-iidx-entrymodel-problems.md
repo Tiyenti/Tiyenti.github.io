@@ -63,7 +63,7 @@ in a bit), I do wonder if it's *just* the Bluetooth support on the adapter causi
 behavioural change, and just using a different adapter might not work. I'd also need to
 find an adapter that functioned, which might take time and money.
 
-## Other attepted fixes, and trying to see if the controller even worked
+## Other attempted fixes, and trying to see if the controller even worked
 I did attempt some other potential solutions that I could think of, but none of these did
 anything:
 
