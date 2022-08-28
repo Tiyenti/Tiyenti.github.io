@@ -11,12 +11,20 @@ spam. Here's what's currently up with me trying to get the IIDX Entry Model cont
 bought a couple weeks ago and recieved today.
 
 <div markdown="1" style="margin-left: 20px; margin-right: 20px;">
-## **Issue Status:** **<span style="color: red;">Unsolved</span>** (as of 2022-08-26)
+## **Issue Status:** **<span style="color: darkgoldenrod;">Workaround Found</span>** (as of 2022-08-28)
 
-This post has last been updated on 2022-08-26.
+This post has last been updated on 2022-08-28.
 
-If I find any solutions or test any more things, I will either be tweeting about them or
-I might possibly update this post with further attempted solutions. If I do find a proper
+I've not managed to solve the problem yet, but I have found a very hacky workaround that circuments
+the issue; in short, I pass the controller through to a Linux virtual machine, and use the Steam Link client combined with GlosSI
+in order to essentially transmit the controller inputs back to my host machine. Yes, this actually works.
+I'm *disgusted* that something as wacky as this actually *functions* with anything resembling performance.
+
+The original post is still available below, but you can jump to the full update by clicking
+[here](/tiyenti-tech-troubles/2022/08/26/ttt-iidx-entrymodel-problems.html#update-as-of-2022-08-28-an-extremely-janky-workaround-that-im-disgusted-actually-works).
+(I will note that this solution isn't fully tested at the moment as there are some things I have
+not tried or tested, but on preliminary look, this is extremely promising.) If I find any solutions or test any more things,
+I will either be tweeting about them or I might possibly update this post with further attempted solutions. If I do find a proper
 solution, I will update this post with it as a reference for any future Internet folks
 who come accross the same issue. {% include footnote.html footnote="There is nothing worse than discovering an obscure problem that noone else seems to have that noone's published any fix for. Even worse if it's an obscure item with very little information about it, at least in the places I would expect there to be on the anglophone Internet (such as on /r/bemani)." %}
 </div>
@@ -162,3 +170,86 @@ share it I guess. Perhaps there is a way.
 
 Anyway until I either find a USB hub or buy one I don't really have anything else I can try
 so for the time being, that's it for now. Hopefully I find some kind of solution soon?
+
+## UPDATE AS OF 2022-08-28: An extremely janky workaround that I'm disgusted actually works
+So, a bit after I had initially posted this I had tried something that I had also found from
+the tweets made by someone that seemigly had the same issue I had, as mentioned above: I tried
+to pass the controller through to a guest virtual machine. And... in what I can only describe
+as sheer, absolute insanity, when I do this, **it works perfectly fine**. Depsite the fact
+it's plugged into the ***SAME DAMN COMPUTER.*** For some reason, it just refuses to work
+with my PC under normal circumstances, but apparently it *does* happen to like VirtualBox's
+USB emulation, I guess, so this gave me a new potential lead as to how I could at the very
+least circumvent the problem.
+
+Essentially, if the controller works in a VM, perhaps there's some way that I could get the
+guest VM to connect to my host machine, to get the controller working there, probably over some
+kind of network connection. If I could manage to do that, then this would probably get the
+controller working, with hopefully minimal latency as the network connection would obviously
+be, well. It's just going to be an internet adapter talking to itself, really, so as far as 
+latency is concerned I didn't think it'd be *too* bad.
+
+I spent some time trying to figure out a method to get that remote connection. I was thinking
+about Steam Remote Play, but I initially ran into problems with that given that on my phone,
+whenever I went back to the desktop (which is where I was going to be running a gamepad test
+website), I couldn't send any controller inputs. Somewhere along that road I found out about
+and was looking into USB/IP and wanting to see if that would work, but eventually I did manage
+to get that installed on a live system and it didn't seem to allow me to bind the controller
+in the VM, so, eh.
+
+So eventually I did just end up having to try the Steam Link linux client;
+I also ended up wasting a lot of time here trying to get it to install on a live ISO
+instead of just properly installing the OS to the VM, which admittedly was mostly due
+to the fact that I had tried a proper install earlier and it failed and was unbootable.
+Just running the Ubuntu installer again (since that's the distro I was using at least for
+testing purposes) fixed that problem and after another reinstall to give myself more virtual
+disk space to install everything, I was able to get the Steam Link app running to see if this
+would work, and it did mostly function and I could bind the controller and all, but it still
+wouldn't work globally throughout my system. I would prefer a solution that didn't need me
+to run every game through Steam to get the controller to work, especially for something
+like *INFINITAS* which has its own web-based launcher as far as I'm aware that might not
+work if added as a non-Steam game.
+
+The solution to that problem is just to use [GlosSI](https://github.com/Alia5/GlosSI); I
+downloaded it, installed the prerequisite drivers, and then added `GlosSITarget.exe` to
+Steam as a shortcut; running this successfully allowed me to use the controller in a 
+web browser, and has officially "solved" my issue with getting the thing to function
+in... what is honestly the most improvised with duct-tape and hot glue solution
+I feel there possibly could be, but, I mean, it *works*. Even if it does feel like
+it could break apart at any moment.
+
+Now I will admit I'm writing this at like 4 in the morning after only having just
+gotten this bullcrap to actually function somewhat well, so I apologise if I've gotten
+a bit rambly here. I've gotta add though that at the moment I've obviously not tested this
+*super* heavily; I've mostly just been using it in some web-based BMS player, where
+it seems to work alright at least. I've not tested this with a PC client like *Beatoraja*
+or, of course, the official *IIDX INFINITAS* PC release - I'm admittedly somewhat worried about
+*INFINITAS* given that I'm not sure how good its controller support really is, but as far as
+I can tell GlosSI does have the option to emulate DS4 instead of XInput, which I assume means
+DirectInput (what the official controllers are meant to be using to begin with), so hopefully
+if I do eventually get around to playing the official PC verison with and I still have to use
+this hack, I should be able to get it to work. 
+
+In terms of input latency, I haven't *noticed* any significant lag, but
+I haven't actually tested it, so it's possible there could maybe be a small amount.
+I'm not sure what the best method to test it would be to be honest but at least it
+wasn't immediately apparent. I think through the use of offset calibration it would
+hopefully be possible to account for whatever small amont of input lag there is, 
+but it would maybe take some time to set that up.
+
+All in all, this is... really screwed up that it's actually kind of working like this,
+but I mean, I am happy that the controller I bought *is* actually able to be used on
+my main PC, even if I have to resort to strange methods like this. I still probably
+will want to try just using a USB hub since that would probably be a more clean solution,
+but this hopefully will work as at least a temporary solution until I can find a more
+permanent fix (but we all know that "placeholder" is just Programmer for "permanent" anyway).
+Just... what the hell is even happening here, though. It doesn't work unless I use it in a
+VM... I have no idea what in the world would cause *that* kind of behaviour, but I guess
+maybe it just doesn't like my USB controller...? I would try with a USB 2.0 port if I still
+had one on my motherboard, but, yeah.
+
+For now, that's everything. I hope that either you enjoyed this technology ramble,
+or if you're one of the 0 other people who have bought this controller and have
+come across the same problem, maybe this will be helpful, although this is definitely
+not something I expect someone who isn't at least something of a tech nerd to be able
+to even follow... either way, maybe it provided some useful advice. Now, in the interest
+of my sleep schedule, I'm gonna stop writing this update. Goodbye for now.
