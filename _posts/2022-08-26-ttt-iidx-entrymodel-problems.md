@@ -300,7 +300,7 @@ Awesome.
 
 Now, I also haven't thorougly tested this new program, and I already encoutered one apparent
 bug where a key started holding itself down, but I think I know why that happened and have
-already updated the code to hopefully prevent that. {% include footnote.html footnote="I was only checking 1 byte of the recieved data at the time, so the input probably just arrived at the same time as something else and got dropped. I'm using TCP for this, which isn't apparently is not message based, so assuming that every 1 byte sent will corrospond to 1 byte receieved was foolish of me. I've since updated the protocol to actually be message based to patch that particular hole." %} I'm not sure if this solution will work with *IIDX INFINITAS* since I
+already updated the code to hopefully prevent that. {% include footnote.html footnote="I was only checking 1 byte of the recieved data at the time, so the key release event probably just arrived at the same time as something else and got dropped. I'm using TCP for this, which isn't apparently is not message based, so assuming that every 1 byte sent will corrospond to 1 byte receieved was foolish of me. I've since updated the protocol to actually be message based to patch that particular hole." %} I'm not sure if this solution will work with *IIDX INFINITAS* since I
 am using an emulated DS4, but I assume that means it will support DirectInput so hopefully
 it'd work. There's always [this program](https://github.com/wcko87/bm-input-display) that can apparently keybind a controller for use
 with *INFINITAS* as well, so I guess we can just slap workarounds on top of workarounds and
@@ -310,7 +310,7 @@ Anyway, I've decided to publish my code on my GitHub, which you can view [here](
 in the near or far future in search of a solution to this exact problem and need to use what
 I use. Just keep in mind that as of right now this is still not 100% confirmed to work right
 and may not be suitable for high level IIDX/BMS play, but even just at a beginner level I can
-tell that this is working much better than my previous solution. 
+tell that this is working much better than my previous solution. {% include footnote.html footnote="Granted, at a high level you probably wouldn't be using this controller anyway. If you were that skilled at the game you'd probably want something that's truly arcade accurate." %}
 
 Not really much else to say other than that; this is still not an *ideal* solution
 given that it still adds the extra processing overhead of having to use a VM to get
