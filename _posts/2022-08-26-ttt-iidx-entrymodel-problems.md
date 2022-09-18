@@ -13,20 +13,24 @@ bought a couple weeks ago and recieved today.
 <div markdown="1" style="margin-left: 20px; margin-right: 20px;">
 ## **Issue Status:** **<span style="color: darkgoldenrod;">Workaround Found</span>** (as of 2022-08-28)
 
-This post has last been updated on 2022-08-28.
+This post has last been updated on 2022-09-18.
 
-I've not managed to solve the problem yet, but I have found a very hacky workaround that circuments
-the issue; in short, I pass the controller through to a Linux virtual machine, and use the Steam Link client combined with GlosSI
-in order to essentially transmit the controller inputs back to my host machine. Yes, this actually works.
-I'm *disgusted* that something as wacky as this actually *functions* with anything resembling performance.
+I have another update on this situation; [last update](/tiyenti-tech-troubles/2022/08/26/ttt-iidx-entrymodel-problems.html#update-as-of-2022-08-28-an-extremely-janky-workaround-that-im-disgusted-actually-works), which I published on 2022-08-28, I mentioned that I had found a functional workaround to get
+the controller working, that being I decided to use a Steam Link in a virtual machine combined
+with GlosSI on my host to get the controller working, but since then I have discovered that
+this limits the polling rate to about 60Hz, which is abysmal.
 
-The original post is still available below, but you can jump to the full update by clicking
-[here](/tiyenti-tech-troubles/2022/08/26/ttt-iidx-entrymodel-problems.html#update-as-of-2022-08-28-an-extremely-janky-workaround-that-im-disgusted-actually-works).
-(I will note that this solution isn't fully tested at the moment as there are some things I have
-not tried or tested, but on preliminary look, this is extremely promising.) If I find any solutions or test any more things,
-I will either be tweeting about them or I might possibly update this post with further attempted solutions. If I do find a proper
-solution, I will update this post with it as a reference for any future Internet folks
-who come accross the same issue. {% include footnote.html footnote="There is nothing worse than discovering an obscure problem that noone else seems to have that noone's published any fix for. Even worse if it's an obscure item with very little information about it, at least in the places I would expect there to be on the anglophone Internet (such as on /r/bemani)." %}
+Since I couldn't find any other program that allowed me to send controller inputs over
+a network that would give me a better polling rate, I decided to just write my
+own code, since I remembered I knew how to do that. This has improved my workaround so that,
+while still being somewhat inconvenient, it feels *much* better to play the game now and in
+theory should feel about as good as just having the controller plugged in directly. You can
+view the latest update [here]() or if you just want to see my code, I've published that on
+my GitHub [here](https://github.com/Tiyenti/iidx-con-hack).
+
+This still isn't ideal, so I would still prefer to have a proper solution, of course.
+Lemme know if you've got any ideas for a fix; I will update this post with it as a reference for any future Internet folks
+who come accross the same issue if I do manage to find one. {% include footnote.html footnote="There is nothing worse than discovering an obscure problem that noone else seems to have that noone's published any fix for. Even worse if it's an obscure item with very little information about it, at least in the places I would expect there to be on the anglophone Internet (such as on /r/bemani)." %}
 </div>
 
 <!--more-->
@@ -253,3 +257,72 @@ come across the same problem, maybe this will be helpful, although this is defin
 not something I expect someone who isn't at least something of a tech nerd to be able
 to even follow... either way, maybe it provided some useful advice. Now, in the interest
 of my sleep schedule, I'm gonna stop writing this update. Goodbye for now.
+
+## UPDATE AS OF 2022-09-18: Improving the workaround and flaws with the original method
+So, I've got another update to this saga. Previously, I had mentioned that using Steam
+Link combined with GlosSI created a functioning workaround, but I hadn't fully tested it,
+and I'm here to report that after longer than it probably should've taken me, I finally
+decided to actually test the latency of this method by binding the buttons in Etterna,
+and running the audio calibration test there - largely because I was trying to figure out
+why my timing was so horrible with this workaround. As far as I knew, beatoraja - what I
+was playing on - has 40ms PGREAT window (±20ms), but I was struggling pretty hard to actually hit
+it consistently, which bothered me a lot since Etterna's Marvelous window is apparently around the same as that (though at the time I thought it was actually smaller), and playing that on keyboard
+gave me significantly less timing problems.
+
+I was wondering if my workaround was adding some latency - but as far as I can tell, there is not
+a significant amount of extra input latency that is being added through this solution. However,
+there was one thing that I started to notice: the standard deviation was sometimes going up to 18ms, and this started to concern me in regards to a *different* issue that this workaround could
+be exacerbating: polling rate. Using [XInputTest](https://github.com/chrizonix/XInputTest) as a reference, I was able to determine what I was fearing: the input polling rate of Steam Link is
+an astronomically low 60Hz. That's some extremely specific information that I wasn't able to
+find on the Internet before I tested it myself, so if anyone else was looking for the same
+info - there you go, I'm the one other crackhead around who actually needed to find that out.
+You're welcome.
+
+Either way, this was going to be a problem, given this is... *not* a good polling rate. While
+60Hz input polling might work for some games, for a rhythm game like IIDX or BMS, that is
+unacceptable; this likely explains why my timing felt so inconsistent, since there would be a lot of times where I just missed the input poll window and the input had to occur around *16 to 17 milliseconds* later, which would definitely be enough to miss the PGREAT window if I hit on the outer edges. Polling rate is really important for rhythm games!
+
+So, I had to find a different solution. I wasn't able to find a different program that seemed
+to do what I needed to do, that being sending controller inputs over a network connection.
+This was frustrating... but then I remembered, oh wait, I know how to code. So I decided to go
+and figure out how to just write my own damn program. The value of knowing programming increases
+exponentially to how niche your interests get, since sometimes you'll run into a problem like
+this where there is literally nothing that does what you want, but then you can just make it
+yourself!
+
+The result of this effort is a simple client and server program written in Python, that uses
+[ViGEmBus](https://github.com/ViGEm/ViGEmBus) to create a virtual DualShock 4 from inputs
+sent over from the virtual machine, and from my testing so far, this has been *much* better
+in terms of timing. Running XInputTest again with this new method confirmed that this new
+solution I made myself seemingly shows the controller polling at 200-220Hz or so, which I
+assume just means it's polling at roughly whatever the rate the controller does normally.
+Awesome.
+
+Now, I also haven't thorougly tested this new program, and I already encoutered one apparent
+bug where a key started holding itself down, but I think I know why that happened and have
+already updated the code to hopefully prevent that. {% include footnote.html footnote="I was only checking 1 byte of the recieved data at the time, so the input probably just arrived at the same time as something else and got dropped. I'm using TCP for this, which isn't apparently is not message based, so assuming that every 1 byte sent will corrospond to 1 byte receieved was foolish of me. I've since updated the protocol to actually be message based to patch that particular hole." %} I'm not sure if this solution will work with *IIDX INFINITAS* since I
+am using an emulated DS4, but I assume that means it will support DirectInput so hopefully
+it'd work. There's always [this program](https://github.com/wcko87/bm-input-display) that can apparently keybind a controller for use
+with *INFINITAS* as well, so I guess we can just slap workarounds on top of workarounds and
+hopefully that would work lmao
+
+Anyway, I've decided to publish my code on my GitHub, which you can view [here](https://github.com/tiyenti/iidx-con-hack) if you're either just interested, or have come across this page
+in the near or far future in search of a solution to this exact problem and need to use what
+I use. Just keep in mind that as of right now this is still not 100% confirmed to work right
+and may not be suitable for high level IIDX/BMS play, but even just at a beginner level I can
+tell that this is working much better than my previous solution. 
+
+Not really much else to say other than that; this is still not an *ideal* solution
+given that it still adds the extra processing overhead of having to use a VM to get
+the controller working, but there is an advantage in that this solution no longer
+requires a GUI, so I can probably alleviate some load by disabling/switching to
+another Linux distribution that doesn't have a desktop environment. It's still
+inconvenient having to remember to start this up every time I wanna play the game,
+but it's better than the controller just straight up not working. There are other
+problems with this controller like buttons double tapping sometimes, which I wonder
+if doing a JKOC-style coin/cardboard mod would help with, but hopefully with this
+solution in place I'll at least get some decent use out of this one until the time
+comes where I can justify spending more on a better controller some time down the line.
+
+That's it for now. If there's any signficiant updates on this situation later on, I'll
+probably update this post again, or at least tweet about it.
