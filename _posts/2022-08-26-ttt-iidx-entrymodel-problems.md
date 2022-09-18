@@ -25,7 +25,7 @@ a network that would give me a better polling rate, I decided to just write my
 own code, since I remembered I knew how to do that. This has improved my workaround so that,
 while still being somewhat inconvenient, it feels *much* better to play the game now and in
 theory should feel about as good as just having the controller plugged in directly. You can
-view the latest update [here]() or if you just want to see my code, I've published that on
+view the latest update [here](/tiyenti-tech-troubles/2022/08/26/ttt-iidx-entrymodel-problems.html#update-as-of-2022-09-18-improving-the-workaround-and-flaws-with-the-original-method) or if you just want to see my code, I've published that on
 my GitHub [here](https://github.com/Tiyenti/iidx-con-hack).
 
 This still isn't ideal, so I would still prefer to have a proper solution, of course.
