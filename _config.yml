@@ -4,6 +4,7 @@ description: Tiyenti's stuff
 author: Tiyenti
 markdown: kramdown
 timezone: Europe/London
+permalink: /:year/:month/:day/:title.html
 defaults:
   -
     scope:
