@@ -18,8 +18,8 @@ by myself or for me by someone I know. In the event I do recieve a product for f
 using as part of my setup, I will disclose this information, but it's not something
 you've gotta worry about for now. I'm not at that level yet :P
 
-> The equipment listed here is up to date as of **2022-09-11**.  
-> The last time I updated the text on this page at all was on **2022-10-11**.  
+> The equipment listed here is up to date as of **2022-10-11**.  
+> The last time I updated the text on this page at all was on **2022-11-10**.  
 
 ## The Essential Peripherals
 Basically, anything that's necessary for my computer to even be *usable* to begin with,
