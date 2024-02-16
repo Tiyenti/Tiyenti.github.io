@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <title>How Distance Calculates Cooldown Percentage</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <h1>How Distance calculates cooldown percentage</h1>
+    <p>
+        This is something that I was curious about, as I wanted to make a graph detailing the eV
+        to cooldown percent conversion. I was initially planning to go about this by getting various eV
+        scores in game and keeping track of their percentage values - however, as you can imagine, this would be
+        time-consuming, not very interesting, and - a feeling I had deep down since starting this brief project -
+        might not tell the full story. So I decided to look and see if I could figure out exactly
+        how it works. If you happen to also be curious - which, let's face it, if you're here, you probably are -
+        here's how it works.
+    </p>
+
+    <h2>Trick Points vs eV</h2>
+    <p>
+        Something to note off the bat is that eV is actually a higher level value - it is not what the game uses to calculate
+        cooldown directly. Instead, it uses a value that I will be referring to as <b>Trick Points (TP)</b> for the purposes of this
+        document. This isn't too important, but there is a specific occurence where this does actually matter, which I'll get to later.
+    </p>
+    <p>
+        Now, this might be one of the less interesting sections, as I haven't actually looked into how TP is calculated completly -
+        I was only interested in the cooldown formula for now. There's a few values used to calculate TP:
+        <ul>
+            <li>First, there is a float value that... I don't really know what it does, I haven't checked. Its value is the return
+                value of a method that will always return <code>1</code> outside of Stunt, so I decided to ignore it for now.
+                If I had to take a guess, I think this might be what handles the stale-trick preventation in Stunt mode, but that's
+                pure speculation on my part. For the purposes of this document, we'll call it <b>wtf</b>, just because.
+            </li>
+            <li>The base value for TP is just the addition of what I'll call <b>Base Trick Points (BTP)</b>. Apparently, the game keeps track of the
+                accumulated points of rotation tricks, wall/ceiling ride tricks, and hold position tricks (aka nosestands) seperately. Seems kinda weird, but
+                there's probably a good reason for it. The game simply adds these three values together to obtain the total base trick points (TBTP).
+            </li>
+        </ul>
+    
+    From this, the actual TP score is calculated - the calculation for this is <code>(float)TBTP * wtf * TotalCombo</code>, the result of which
+    is cast to an int. You might be able to deduce that TotalCombo is the multiplier value in Stunt mode, in which case, good job, you are correct.
+    (Also, semi-unrelated, but the maximum multiplier in Stunt mode appears to be 999. I challenge somebody to reach this in an actual Stunt round.
+    I don't think it's possible, but if you manage, <a href="https://mstdn.games/@Tiyenti">send me the video.</a>)
+    </p>
+    <p>
+
+    eV score has a little calculation of its own, though it's very simple: eV is simply <code>TP * 5</code>.<br /><br />
+    ...Kinda. Actually, there is one additional adjustment to the eV value that TP does not reflect - Stunt mode's sloppy and clean
+    landing modifiers. These x0.5 and x2 modifiers are only made to the eV score. As such, while sloppy and clean landings will affect your
+    score in Stunt, they will not affect the amount of cooldown recieved. Yeah, I'll admit that buildup was a little dramatic, as this is the
+    <i>only</i> difference that exists between eV and the underlying TP value, but given the topic of this article is specifically about the
+    cooldown calcuation, I figure it's worth noting.
+    </p>
+
+    <h2>Now for the cooldown itself</h2>
+    <p>
+        There are some base initial values used in order to calculate the cooldown percentage:
+        <ul>
+            <li>The int values <b>minCooldownPoints</b> and <b>maxCooldownPoints</b>, which are set to 50 and 300 respectively. These define
+            the lower and upper TP bounds of the cooldown scale.</li>
+            <li>The float values <b>minCooldown</b> and <b>maxCooldown</b>, which are set to 0.5 and 1.0.</li>
+        </ul>
+
+        The cooldown amount is a float value, which is obtained from two calculations.
+        <ul>
+            <li>First, your TP scored is converted into the linear parameter <b>t</b> via Unity's InverseLerp method:
+                <code>Mathf.InverseLerp(minCooldownPoints, maxCooldownPoints, TP)</code>. This value is a float between 0 and 1, showing what
+                <code>TP</code> equals as a percentage in the range 50 to 300.</li>
+            <li>Following this, the cooldown percentage itself is a simple linear interpolation between minCooldown and maxCooldown, using the aformetioned <code>t</code> as
+            the amount.</li>
+        </ul>
+
+        From this, we find that the minimum cooldown possible is <b>50%</b>, and to obtain any more, you need to score at least <b>51 TP</b>, or 255 eV. This is why a Double doesn't provide
+        any more cooldown than a single barrel roll despite having a higher point value - neither provide enough TP to reach this minimum point threshold. However, once the threshold has been reached, the point scale becomes
+        completely linear, up until the maximum of 300 TP (1500 eV). The resulting graph isn't quite as interesting as I hoped it would be, but the process of creating it was pretty fun.
+
+        <img src="cooldownchart.png" style="display: block;"/>
+    </p>
+    <p>
+        Interestingly, though, the rounding behaviour when the game displays the percentage in-game seems a little... off. The math doesn't look wrong -
+        the calculation is simply <code>cooldown * 100</code> cast to an int, so it should display properly, but... it doesn't, for some reason. As an example,
+        the game shows 275 eV as providing a 50% cooldown. However, the raw cooldown float is <code>0.51</code>, so it actually gives <b>51%</b> cooldown
+        - the game just doesn't display it properly! I've been unable to reproduce this behaviour using the C# Interactive Prompt, so I assume this may be some
+        kind of error in the way Mono, the .NET implementation that Unity uses, rounds floats to ints during casting.
+    </p>
+    <p>
+        Either way, that's all I have to say on this... and I must apologise for the probably shoddy and impossible to understand writing here, as I've been
+        writing this for at least an hour straight, and it's nearly midnight... but I wanted to get this out today, so I can't be bothered to do much editing.
+        Yeah, I'm gonna go to bed now. Peace.
+    </p>
+
+    <span style="font-size: 80%; color: silver;">
+    Last updated: 2024-02-16 (moved to new site, social media link updated)<br />
+    Originally posted: 2018-08-31</span>
+</html>
