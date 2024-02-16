@@ -10,6 +10,6 @@ I want to do it more, but any time I consider it I tend to grapple with both unc
 constrained by the format of posts that I have already written, so I don't really want to advertise myself as having A Blog; so instead, here's
 a manually updated list. We'll see if I go back to an actual blog feed at some point or figure out some way to automate this eventually.
 
-* 2022-08-26 [Trying to get an official IIDX Entry Model contoller to function](/2022/08/26/ttt-iidx-entrymodel-problems.html)
+* 2022-08-26 [Trying to get an official IIDX Entry Model controller to function](/2022/08/26/ttt-iidx-entrymodel-problems.html)
 * 2021-02-05 [Repairing an Xbox One Elite Series 1 controller's bumper assembly](/2021/02/05/xbox-controller-repair.html) (some hotlinked images missing) 
 * 2018-08-31 [How Distance calculates cooldown percentage](/pages/legacy/cooldown.html) (legacy page, excuse the lack of theming)
