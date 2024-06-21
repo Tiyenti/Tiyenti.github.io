@@ -12,4 +12,5 @@ a manually updated list. We'll see if I go back to an actual blog feed at some p
 
 * 2022-08-26 [Trying to get an official IIDX Entry Model controller to function](/2022/08/26/ttt-iidx-entrymodel-problems.html)
 * 2021-02-05 [Repairing an Xbox One Elite Series 1 controller's bumper assembly](/2021/02/05/xbox-controller-repair.html) (some hotlinked images missing) 
+* 2020-11-24 [Distance Speedrunning 101 - The Complete Guide](https://www.speedrun.com/distance/guides/5k34r) (on speedrun.com)
 * 2018-08-31 [How Distance calculates cooldown percentage](/pages/legacy/cooldown.html) (legacy page, excuse the lack of theming)
