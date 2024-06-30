@@ -15,10 +15,8 @@ written in the past that you think is worth linking to here, I guess you can let
 consider adding it to the list. Future blog posts or writeups will probably be more consistently
 updated and listed on here though.
 
-**Key:** ✏&#xFE0F; blog post; 📃 article/page; 🔗 hosted externally
-
-* 2022-08-26 - ✏&#xFE0F; [Trying to get an official IIDX Entry Model controller to function](/2022/08/26/ttt-iidx-entrymodel-problems.html)
-* 2021-10-27 - 🔗 [Distance Glossary [2.0 beta I guess]](https://write.as/cmuniw4uaai7i41h.md) (hosted on write.as, [backup here](/pages/distance-glossary.md); living document last updated on 2021-12-11)
-* 2021-02-05 - ✏&#xFE0F; [Repairing an Xbox One Elite Series 1 controller's bumper assembly](/2021/02/05/xbox-controller-repair.html) (some hotlinked images missing) 
-* 2020-11-24 - 🔗 [Distance Speedrunning 101 - The Complete Guide](https://www.speedrun.com/distance/guides/5k34r) (hosted on speedrun.com)
-* 2018-08-31 - 📃 [How Distance calculates cooldown percentage](/pages/legacy/cooldown.html) (legacy page, excuse the lack of theming)
+* 2022-08-26 - [Trying to get an official IIDX Entry Model controller to function](/2022/08/26/ttt-iidx-entrymodel-problems.html)
+* 2021-10-27 - [Distance Glossary [2.0 beta I guess]](/pages/distance-glossary.md)
+* 2021-02-05 - [Repairing an Xbox One Elite Series 1 controller's bumper assembly](/2021/02/05/xbox-controller-repair.html) (some hotlinked images missing) 
+* 2020-11-24 - [Distance Speedrunning 101 - The Complete Guide](https://www.speedrun.com/distance/guides/5k34r) (hosted on speedrun.com)
+* 2018-08-31 - [How Distance calculates cooldown percentage](/pages/legacy/cooldown.html) (legacy page, excuse the lack of theming)

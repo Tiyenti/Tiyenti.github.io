@@ -2,6 +2,9 @@
 permalink: /distance-glossary
 ---
 # Distance Glossary [2.0 beta I guess]
+
+<span class="comment">Footnote: This is a backup of a post <a href="https://write.as/cmuniw4uaai7i41h.md">originally hosted on write.as</a>.</span>
+
 This is intended to be something of an updated version of my old Distance glossary, with more
 detailed descriptions and cleaning things up to remove several outdated terms, other definitons that I rarely actually saw used regularly, and terms that the game itself uses
 (and therefore seem unncessary to mention). This list is not guarunteed to be completed
