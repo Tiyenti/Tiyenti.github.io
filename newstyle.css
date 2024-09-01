@@ -180,6 +180,13 @@ code
     max-width: 700px;
 }
 
+@media (max-width: 700px) {
+    .blog-image
+    {
+        width: 100%;
+    }
+}
+
 .img-caption
 {
     display: block;
