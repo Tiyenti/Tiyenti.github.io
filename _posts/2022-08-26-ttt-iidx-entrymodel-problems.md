@@ -35,7 +35,7 @@ who come accross the same issue if I do manage to find one. {% include footnote.
 
 <!--more-->
 
-{% include img.html src="https://pbs.twimg.com/media/FbHGAllUEAEWIZh.png" alt="Image of my avatar character, Mssaku, smashing her head into a desk." caption="*sigh* Here we go again..."%}
+{% include img.html src="https://pbs.twimg.com/media/FbHGAllUEAEWIZh.png" alt="Image of my avatar character smashing her head into a desk." caption="*sigh* Here we go again..."%}
 
 ## The Basic Overview
 
