@@ -4,7 +4,10 @@ description: Tiyenti's stuff
 author: Tiyenti
 markdown: kramdown
 timezone: Europe/London
-permalink: /:year/:month/:day/:title.html
+permalink: /blog/:year/:month/:day/:title.html
+feed:
+  path: /blog/feed.xml
+  icon: /favicon.png
 defaults:
   -
     scope:
